@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ci": "npm run build && npm run check-format",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "keywords": [
     "demo",
@@ -19,6 +21,7 @@
   ],
   "type": "module",
   "devDependencies": {
+    "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   }
 }
