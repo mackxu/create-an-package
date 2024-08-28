@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["demo", "package"],
+  "keywords": [
+    "demo",
+    "package"
+  ],
   "author": "duoduoxu",
   "license": "MIT",
   "description": "",
-  "files": ["dist"],
-  "type": "module"
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }
